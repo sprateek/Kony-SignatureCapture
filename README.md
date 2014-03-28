@@ -3,28 +3,29 @@ Kony-SignatureCapture
 
 Android FFI Module for Signature Capture. Targetted for Tablets
 
-Support:
+<b>Support:</b><br/>
 Supported on API Level 11(Honeycomb) and above
 To support mobile devices, change below in CaptureSignature onCreate as per appropriate layout width/height
 LinearLayout.LayoutParams localLayoutParams1 = new LinearLayout.LayoutParams(900, 500);
 
-Integration steps:
-Step 1: Import kony_ffi_export\export_ffi.zip in Kony IDE
-Step 2: Add below under <application> at Project Properties -> Native -> Android -> Tags
-<activity android:theme="@android:style/Theme.Holo.Dialog" android:name="com.kony.prateek.ffi.CaptureSignature" android:permission="com.testpackage.mypermission" android:launchMode="singleTop">
-  <intent-filter>                 
-    <action android:name="android.intent.action.VIEW" />                 
-    <category android:name="android.intent.category.DEFAULT" />             
-  </intent-filter>         
-</activity>
-Step 3: 
+<b>Integration steps:</b><br/>
+<b>Step 1:</b> Import kony_ffi_export\export_ffi.zip in Kony IDE
+<br/>
+<b>Step 2:</b> Add below under <application> at Project Properties -> Native -> Android -> Tags
+<br/>
+\<activity android:theme="@android:style/Theme.Holo.Dialog" android:name="com.kony.prateek.ffi.CaptureSignature" android:permission="com.testpackage.mypermission" android:launchMode="singleTop"><br/>
+  \<intent-filter>                 
+    \<action android:name="android.intent.action.VIEW" />                 
+    \<category android:name="android.intent.category.DEFAULT" />             
+  \</intent-filter>         
+\</activity>
 
-Usage:
+<b>Usage:</b><br/>
 Signature.capture(handleCallback)
 
 function handleCallback(signatureSring){
 	kony.print(signatureSring.signatureByteArray);
 }
 
-Future Enhancements:
+<b>Future Enhancements:</b><br/>
 Change the layout params based on device type/JS input (Currently hardcoded to 900,500)
