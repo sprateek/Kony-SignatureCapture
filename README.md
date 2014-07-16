@@ -11,7 +11,7 @@ LinearLayout.LayoutParams localLayoutParams1 = new LinearLayout.LayoutParams(900
 <b>Integration steps:</b><br/>
 <b>Step 1:</b> Import kony_ffi_export\export_ffi.zip in Kony IDE
 <br/>
-<b>Step 2:</b> Add below under <application> at Project Properties -> Native -> Android -> Tags
+<b>Step 2:</b> Add below under "application" section at Project Properties -> Native -> Android -> Tags
 <br/>
 \<activity android:theme="@android:style/Theme.Holo.Dialog" android:name="com.kony.prateek.ffi.CaptureSignature" android:permission="com.testpackage.mypermission" android:launchMode="singleTop"><br/>
   \<intent-filter>                 
